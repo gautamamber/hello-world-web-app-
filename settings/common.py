@@ -26,7 +26,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     # 'django.contrib.humanize',  # Useful template tags
-
+    'newappp',
+    'hello_world_app.secondapp',
     'hello_world_app.base',
     'hello_world_app.users',
 
