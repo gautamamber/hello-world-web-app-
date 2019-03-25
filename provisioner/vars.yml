@@ -1,0 +1,7 @@
+---
+project_name: hello_world_app
+project_repo_url: git@github.com:gautamamber/hello-world-app-web.git
+project_repo_remote: origin
+repo_version: master
+pg_gis: False
+sass_with_django_compressor: True
