@@ -2,6 +2,7 @@
 from rest_framework.routers import DefaultRouter
 
 from hello_world_app.secondapp.views import CityViewSet
+from hello_world_app.csvupload.views import	PersonViewSet
 # Hello-world-app Stuff
 from hello_world_app.base.api.routers import SingletonRouter
 from hello_world_app.users.api import CurrentUserViewSet, UserViewSet
@@ -18,7 +19,8 @@ singleton_router.register('me', CurrentUserViewSet, basename='me')
 default_router.register('user', UserViewSet, basename = "users")
 default_router.register('city', CityViewSet, basename='city')
 default_router.register('post',ListCreatePost, basename = "post")
-default_router.register('fileupload',FileViewSet, basename = "file")
+default_router.register('person',PersonViewSet, basename = "person")
+
 # Combine urls from both default and singleton routers and expose as
 # 'urlpatterns' which django can pick up from this module.
 urlpatterns = default_router.urls + singleton_router.urls

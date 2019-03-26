@@ -25,6 +25,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'hello_world_app.csvupload',
+    'import_export',
     # 'django.contrib.humanize',  # Useful template tags
     'newappp',
     'hello_world_app.secondapp',
@@ -67,6 +69,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # For Exposing browsable api urls. By default urls won't be exposed.
 API_DEBUG = env.bool('API_DEBUG', default=False)
 
+
+IMPORT_EXPORT_USE_TRANSACTIONS = True
 # rest_framework
 # ------------------------------------------------------------------------------
 REST_FRAMEWORK = {
