@@ -30,7 +30,7 @@ INSTALLED_APPS = (
     'hello_world_app.secondapp',
     'hello_world_app.base',
     'hello_world_app.users',
-
+    'hello_world_app.fileupload',
     'rest_framework',  # http://www.django-rest-framework.org/
     'rest_framework_swagger',
     'versatileimagefield',  # https://github.com/WGBH/django-versatileimagefield/

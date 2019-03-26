@@ -23,7 +23,7 @@ class CityViewSet(ListModelMixin,
                     UpdateModelMixin,
                     DestroyModelMixin,
                     viewsets.GenericViewSet):
-    permission_classes = (permissions.IsAdmin)
+    permission_classes = (permissions.IsAdmin,)
     queryset = City.objects.all()
     serializer_class = CitySerializer
     
