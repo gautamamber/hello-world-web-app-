@@ -27,6 +27,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'hello_world_app.csvupload',
     'import_export',
+    'hello_world_app.uploadcsvadmin',
     # 'django.contrib.humanize',  # Useful template tags
     'newappp',
     'hello_world_app.secondapp',
