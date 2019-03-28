@@ -36,7 +36,7 @@ class StudentAdmin(admin.ModelAdmin):
 							city = field[4],
 						)
 			self.message_user(request, "Your csv file has been imported")
-			
+			# return render("")
 
 		form = StudentModelForm()
 		payload = {"form":form}

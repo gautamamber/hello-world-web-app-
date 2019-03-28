@@ -18,6 +18,8 @@ default_router.register('auth', AuthViewSet, basename='auth')
 singleton_router.register('me', CurrentUserViewSet, basename='me')
 default_router.register('user', UserViewSet, basename = "users")
 default_router.register('city', CityViewSet, basename='city')
+default_router.register('file', FileViewSet, basename='file')
+
 default_router.register('post',ListCreatePost, basename = "post")
 default_router.register('person',PersonViewSet, basename = "person")
 
